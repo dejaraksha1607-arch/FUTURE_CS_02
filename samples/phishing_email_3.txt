@@ -1,0 +1,40 @@
+Delivered-To: user@gmail.com
+
+Received: from mx.google.com (mx.google.com [209.85.200.27])
+        by smtp.gmail.com with ESMTPS id a1si1234567qka.123.2024.03.12.10.10.10
+        for <user@gmail.com>;
+        Tue, 12 Mar 2024 10:10:10 +0000 (UTC)
+
+Received: from mail-io1-f44.google.com (mail-io1-f44.google.com [209.85.166.44])
+        by mx.google.com with ESMTPS id a1si1234567qka.123.2024.03.12.10.10.10
+        for <user@gmail.com>;
+        Tue, 12 Mar 2024 10:10:10 +0000 (UTC)
+
+Received: from smtp.paypal.com (smtp.paypal.com [173.0.84.66])
+        by mail-io1-f44.google.com with ESMTPS id x7si7654321ioa.45.2024.03.12.10.10.09
+        for <user@gmail.com>;
+        Tue, 12 Mar 2024 10:10:09 +0000 (UTC)
+
+Received-SPF: pass (google.com: domain of service@paypal.com designates 173.0.84.66 as permitted sender) client-ip=173.0.84.66;
+
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of service@paypal.com designates 173.0.84.66 as permitted sender) smtp.mailfrom=service@paypal.com;
+       dkim=pass header.i=@paypal.com header.s=pp-dkim header.b=abc123xyz;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=paypal.com
+
+Return-Path: <service@paypal.com>
+
+Received: from smtp.paypal.com (smtp.paypal.com [173.0.84.66])
+        by smtp.paypal.com with ESMTP id 12345abcde;
+        Tue, 12 Mar 2024 10:10:08 +0000
+
+Message-ID: <1234567890@mail.paypal.com>
+
+From: PayPal <service@paypal.com>
+To: user@gmail.com
+Subject: Your recent PayPal transaction
+Date: Tue, 12 Mar 2024 10:10:08 +0000
+
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
